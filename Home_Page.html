@@ -32,7 +32,7 @@
         <li data-target="#slide" data-slide-to="0" classs="active"></li>
         <li data-target="#slide" data-slide-to="1"></li>
     </ul>
-    <div class="carouselinner" style="width: 100%; height: 600px; !important">
+    <div class="carouselinner" style="width: 100%; height: 600px;" !important>
         <div class="carousel-item active">
             <img src="image1.png">
             <div class="carousel-caption">
@@ -58,4 +58,49 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>
-</div> 
+</div>
+
+
+
+
+<tr>
+    <td width="115">&nbsp;&nbsp;&nbsp;&nbsp;<font style="font-size:20px;">Username</font>
+    </td>
+    <td width="3">:</td>
+    <td width="160">
+<input name="txtus ername" class="forminput formcontrol" id="txtusername"
+   maxlength="20" type="text"></td>
+   </tr>
+    <tr>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;<font style="font-size:20px;">Password</font>
+    </td>
+    <td>:</td>
+   <td><input name="txt password" class="forminput formcontrol" id="txtpassword"
+   maxlength="20" type="password"></td>
+   </tr>
+    <tr>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;<font style="font-size:20px;">Office</font>
+    </td>
+    <td>:</td>
+    <td>
+    <select name="Offi
+   ceName" class="btn btn-light dropdown-toggle">
+    <?php
+   while ($data = d bFetchAssoc($result)) {
+    ?>
+   <option value=
+   "<?php echo $data['off_name']; ?>">
+   <?php echo $data['off_name']; ?></option>
+    <?php
+   } //while
+   ?>
+    </select>
+    </td>
+    </tr>
+    <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+   <td><input name="Sub mit" class="green-button btn btninfo" value="Login Now"
+   type="submit" style="padding:5px 10px;font-weight:bold; margin-top:10px;"></td>
+    </tr>
+   
