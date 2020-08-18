@@ -8,7 +8,8 @@ scroll-behavior: smooth;
 65%;
 }
 }
-.navbar{ backgroundcolor: white; opacity:
+.navbar{
+    background-color: white; opacity:
 0.9;
 }
 nav li{ text-transform:
@@ -45,7 +46,7 @@ width: 100%; height:
 100%;
 } 
 .carousel-caption button a:hover{
-margin-bottom: 30%; textdecoration: none;
+margin-bottom: 30%; text-decoration: none;
 }
 .jumbotron{
 padding: 1rem;
